@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { Home2Component } from './home2/home2.component';
 import {Routes,RouterModule} from '@angular/router';
+import { TestComponent } from './test/test.component';
 const ROUTES:Routes=[
   {
     path:'home',component:HomeComponent
@@ -18,7 +19,7 @@ const ROUTES:Routes=[
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(ROUTES) ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, Home2Component ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, Home2Component, TestComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
