@@ -15,6 +15,10 @@ const ROUTES:Routes=[
   {
     path:'home2',component:Home2Component
   }
+  ,
+   {
+    path: 'home/:id', component : HomeComponent
+   }
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(ROUTES) ],
